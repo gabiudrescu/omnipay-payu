@@ -8,7 +8,7 @@
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment
 processing library for PHP 5.3+. This package trying to implement PayU Romania support for Omnipay.
 
-I forked from this version from https://github.com/efesaid/omnipay-payu improving it together with @sky-hub so we can use
+I forked from this version from https://github.com/efesaid/omnipay-payu improving it together with [@sky-hub](https://github.com/sky-hub) so we can use
 with PayU Romania.
 
 It seems PayU Romania and Turkey use the same backend, with small modifications, with country specific.
