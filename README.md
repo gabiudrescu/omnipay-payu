@@ -1,6 +1,6 @@
-# Omnipay: PayU Romania
+# Omnipay: PayU Intl
 
-**PayU Romania driver for the Omnipay payment processing library**
+**PayU Intl driver for the Omnipay payment processing library**
 
 [![Latest Stable Version](https://poser.pugx.org/omnipay/payu/version.png)](https://packagist.org/packages/omnipay/payu)
 [![Total Downloads](https://poser.pugx.org/omnipay/payu/d/total.png)](https://packagist.org/packages/omnipay/payu)
@@ -8,7 +8,13 @@
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment
 processing library for PHP 5.3+. This package trying to implement PayU Romania support for Omnipay.
 
-Forked from: https://github.com/efesaid/omnipay-payu
+I forked from this version from https://github.com/efesaid/omnipay-payu improving it together with @sky-hub so we can use
+with PayU Romania.
+
+It seems PayU Romania and Turkey use the same backend, with small modifications, with country specific.
+
+This is an unofficial version of PayU Intl Integration, aiming to offer support mainly for PayU Romania. Our secondary 
+goal is to support Turkey and other similar-platform PayU countries.
 
 ## Installation
 
@@ -18,7 +24,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "omnipay/payu": "~2.0"
+        "omnipay/payu-intl": "~2.0"
     }
 }
 ```
