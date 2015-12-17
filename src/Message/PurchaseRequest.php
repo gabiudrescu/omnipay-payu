@@ -41,7 +41,7 @@ class PurchaseRequest extends AbstractRequest
     {
         $data = array();
         $data['MERCHANT'] = $this->getMerchantId();
-        $data['ORDER_REF'] = rand(1000, 9999);
+        $data['ORDER_REF'] = $this->getTransactionReference();
         $data['ORDER_DATE'] = gmdate('Y-m-d H:i:s');
         $data['PRICES_CURRENCY'] = $this->getCurrency();
         $data['PAY_METHOD'] = 'CCVISAMC';
