@@ -1,13 +1,14 @@
-# Omnipay: PayU
+# Omnipay: PayU Romania
 
-**PayU driver for the Omnipay payment processing library**
+**PayU Romania driver for the Omnipay payment processing library**
 
-[![Build Status](https://travis-ci.org/thephpleague/omnipay-payu.png?branch=master)](https://travis-ci.org/thephpleague/omnipay-payu)
 [![Latest Stable Version](https://poser.pugx.org/omnipay/payu/version.png)](https://packagist.org/packages/omnipay/payu)
 [![Total Downloads](https://poser.pugx.org/omnipay/payu/d/total.png)](https://packagist.org/packages/omnipay/payu)
 
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment
-processing library for PHP 5.3+. This package implements PayU support for Omnipay.
+processing library for PHP 5.3+. This package trying to implement PayU Romania support for Omnipay.
+
+Forked from: https://github.com/efesaid/omnipay-payu
 
 ## Installation
 
