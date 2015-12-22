@@ -267,7 +267,7 @@ class Gateway extends AbstractGateway
      */
     public function getTimeoutUrl()
     {
-        return $this->getParameter('timeout_url');
+        return $this->getParameter('timeoutUrl');
     }
 
     /**
@@ -278,28 +278,28 @@ class Gateway extends AbstractGateway
      */
     public function setTimeoutUrl($value)
     {
-        return $this->setParameter('timeout_url', $value);
+        return $this->setParameter('timeoutUrl', $value);
     }
 
     /**
-     * Get the request return URL
+     * Get the request success URL
      *
      * @return string
      */
-    public function getReturnUrl()
+    public function getSuccessUrl()
     {
-        return $this->getParameter('returnUrl');
+        return $this->getParameter('successUrl');
     }
 
     /**
-     * Sets the request return URL.
+     * Sets the request success URL
      *
      * @param string $value
      * @return $this
      */
-    public function setReturnUrl($value)
+    public function setSuccessUrl($value)
     {
-        return $this->setParameter('returnUrl', $value);
+        return $this->setParameter('successUrl', $value);
     }
 
     /**

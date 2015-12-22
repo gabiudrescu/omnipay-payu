@@ -298,7 +298,7 @@ class PurchaseRequest extends AbstractRequest
      */
     public function getTimeoutUrl()
     {
-        return $this->getParameter('timeout_url');
+        return $this->getParameter('timeoutUrl');
     }
 
     /**
@@ -309,7 +309,28 @@ class PurchaseRequest extends AbstractRequest
      */
     public function setTimeoutUrl($value)
     {
-        return $this->setParameter('timeout_url', $value);
+        return $this->setParameter('timeoutUrl', $value);
+    }
+
+    /**
+     * Get the request success URL
+     *
+     * @return string
+     */
+    public function getSuccessUrl()
+    {
+        return $this->getParameter('successUrl');
+    }
+
+    /**
+     * Sets the request success URL
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setSuccessUrl($value)
+    {
+        return $this->setParameter('successUrl', $value);
     }
 
     /**
@@ -383,10 +404,10 @@ class PurchaseRequest extends AbstractRequest
 
         /* additional info */
         $data['LANGUAGE'] = $this->httpRequest->getLocale();
-        $data['BACK_REF'] = $this->getReturnUrl();
+        $data['BACK_REF'] = str_replace('{{orderid}}', $this->getOrderId(), $this->getSuccessUrl());
         $data['DEBUG'] = 1;
         $data['ORDER_TIMEOUT'] = $this->getTimeout();
-        $data['TIMEOUT_URL'] = $this->getTimeoutUrl();
+        $data['TIMEOUT_URL'] = str_replace('{{orderid}}', $this->getOrderId(), $this->getTimeoutUrl());
         $data['AUTOMODE'] = (int)$this->getAutoMode();
         $data['CLIENT_IP'] = $this->getClientIp();
 

@@ -1,37 +1,34 @@
 {
-    "name": "omnipay/payu-intl",
-    "type": "library",
-    "description": "International PayU driver for the Omnipay payment processing library",
-    "keywords": [
-        "gateway",
-        "merchant",
-        "omnipay",
-        "innobyte",
-        "pay",
-        "payment",
-        "payu",
-        "purchase"
-    ],
-    "homepage": "https://github.com/gabiudrescu/omnipay-payu",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Valentin Sandu",
-            "email": "valentin.sandu@innobyte"
-        }
-    ],
-    "autoload": {
-        "psr-4": { "Omnipay\\PayUIntl\\" : "src/" }
-    },
-    "require": {
-        "omnipay/common": "~2.0"
-    },
-    "require-dev": {
-        "omnipay/tests": "~2.0"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
+  "name": "omnipay/payu-intl",
+  "type": "library",
+  "description": "International PayU driver for the Omnipay payment processing library",
+  "keywords": [
+    "gateway",
+    "merchant",
+    "omnipay",
+    "innobyte",
+    "pay",
+    "payment",
+    "payu",
+    "purchase"
+  ],
+  "homepage": "https://github.com/gabiudrescu/omnipay-payu",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Valentin Sandu",
+      "email": "valentin.sandu@innobyte"
     }
+  ],
+  "autoload": {
+    "psr-4": { "Omnipay\\PayUIntl\\" : "src/" }
+  },
+  "require": {
+    "omnipay/common": "~2.0"
+  },
+  "require-dev": {
+    "omnipay/tests": "~2.0"
+  },
+  "version": "1.0.1",
+  "minimum-stability": "stable"
 }
