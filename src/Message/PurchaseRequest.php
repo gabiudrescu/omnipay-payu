@@ -366,8 +366,7 @@ class PurchaseRequest extends AbstractRequest
         if (mb_strlen($billingAddress->getCompany())) {
             $data['BILL_COMPANY'] = $billingAddress->getCompany();
         }
-
-        // field needed for anti fraud check
+        // BILL_PHONE, DELIVERY_PHONE: fields needed for anti fraud check
         $data['BILL_PHONE'] = mb_strlen($billingAddress->getPhone()) ? $billingAddress->getPhone() : '-';
         $data['BILL_ADDRESS'] = $billingAddress->getAddress();
         $data['BILL_ZIPCODE'] = $billingAddress->getZipCode();
