@@ -1,38 +1,27 @@
 {
     "name": "omnipay/payu-intl",
     "type": "library",
-    "description": "PayU Intl driver for the Omnipay payment processing library (forked from 'omnipay/payu')",
+    "description": "International PayU driver for the Omnipay payment processing library",
     "keywords": [
         "gateway",
         "merchant",
         "omnipay",
+        "innobyte",
         "pay",
         "payment",
         "payu",
         "purchase"
     ],
-    "homepage": "https://github.com/gabiudrescu/omnipay-payu-intl",
+    "homepage": "https://github.com/gabiudrescu/omnipay-payu",
     "license": "MIT",
     "authors": [
         {
-            "name": "Said İmamoğlu",
-            "email": "said.imamoglu@biberltd.com"
-        },
-        {
-            "name": "Gabi Udrescu",
-            "email": "gabriel.udr@gmail.com"
-        },
-        {
             "name": "Valentin Sandu",
-            "email": "valentin.sandu@innobyte.com"
-        },
-        {
-            "name": "Omnipay Contributors",
-            "homepage": "https://github.com/efesaid/omnipay-payu/contributors"
+            "email": "valentin.sandu@innobyte"
         }
     ],
     "autoload": {
-        "psr-4": { "Omnipay\\PayU\\" : "src/" }
+        "psr-4": { "Omnipay\\PayUIntl\\" : "src/" }
     },
     "require": {
         "omnipay/common": "~2.0"
@@ -42,7 +31,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "dev-master": "1.0.x-dev"
         }
     }
 }
