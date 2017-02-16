@@ -477,23 +477,26 @@ class PurchaseRequest extends AbstractRequest
      */
     protected function generateHash(array $data)
     {
-        $hashData['MERCHANT'] = $data['MERCHANT'];
-        $hashData['ORDER_REF'] = $data['ORDER_REF'];
-        $hashData['ORDER_DATE'] = $data['ORDER_DATE'];
-        $hashData['ORDER_PNAME'] = $data['ORDER_PNAME'];
-        $hashData['ORDER_PCODE'] = $data['ORDER_PCODE'];
-        $hashData['ORDER_PINFO'] = $data['ORDER_PINFO'];
-        $hashData['ORDER_PRICE'] = $data['ORDER_PRICE'];
-        $hashData['ORDER_QTY'] = $data['ORDER_QTY'];
-        $hashData['ORDER_VAT'] = $data['ORDER_VAT'];
-        $hashData['ORDER_SHIPPING'] = $data['ORDER_SHIPPING'];
-        $hashData['PRICES_CURRENCY'] = $data['PRICES_CURRENCY'];
-        $hashData['DISCOUNT'] = $data['DISCOUNT'];
-        $hashData['DESTINATION_CITY'] = $data['DESTINATION_CITY'];
-        $hashData['DESTINATION_STATE'] = $data['DESTINATION_STATE'];
-        $hashData['DESTINATION_COUNTRY'] = $data['DESTINATION_COUNTRY'];
-        $hashData['PAY_METHOD'] = $data['PAY_METHOD'];
-        $hashData['ORDER_PRICE_TYPE'] = $data['ORDER_PRICE_TYPE'];
+        $hashData = [
+            'MERCHANT' => $data['MERCHANT'],
+            'ORDER_REF' => $data['ORDER_REF'],
+            'ORDER_DATE' => $data['ORDER_DATE'],
+            'ORDER_PNAME' => $data['ORDER_PNAME'],
+            'ORDER_PCODE' => $data['ORDER_PCODE'],
+            'ORDER_PINFO' => $data['ORDER_PINFO'],
+            'ORDER_PRICE' => $data['ORDER_PRICE'],
+            'ORDER_QTY' => $data['ORDER_QTY'],
+            'ORDER_VAT' => $data['ORDER_VAT'],
+            'ORDER_SHIPPING' => $data['ORDER_SHIPPING'],
+            'PRICES_CURRENCY' => $data['PRICES_CURRENCY'],
+            'DISCOUNT' => $data['DISCOUNT'],
+            'DESTINATION_CITY' => $data['DESTINATION_CITY'],
+            'DESTINATION_STATE' => $data['DESTINATION_STATE'],
+            'DESTINATION_COUNTRY' => $data['DESTINATION_COUNTRY'],
+            'PAY_METHOD' => $data['PAY_METHOD'],
+            'ORDER_PRICE_TYPE' => $data['ORDER_PRICE_TYPE'],
+            'TESTORDER' => $data['TESTORDER'],
+        ];
 
         return $this->hmacMd5($hashData);
     }
